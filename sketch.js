@@ -17,10 +17,11 @@ function draw() {
   rectMode(CENTER);
   rect(525, 665, 100, 100, 20);
   
-  if (keyIsDown(32)){ // tried keyDown also
+  if (keyDown("space")){               // tried keyDown and keyPressed also
     console.log("Inside if condition")
     //ellipse(100,100,20,20)
     drawDie(525,665)
+    gameState = 2;
   }
 }
 
